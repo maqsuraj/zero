@@ -18,6 +18,11 @@ variables:
 
   # Environment name
   environmentName: ''
+  
+  task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'maqsuraj/zero/pystar.py'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
